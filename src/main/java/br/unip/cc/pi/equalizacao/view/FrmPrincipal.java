@@ -52,7 +52,7 @@ public class FrmPrincipal extends JFrame {
     }
 
     private void salvarImage() {
-        if (imagem.getBufferedImage() == null) return;
+        if (imagem == null || imagem.getBufferedImage() == null) return;
 
         JFileChooser fileChooser = new JFileChooser();
         fileChooser.setAcceptAllFileFilterUsed(false);
